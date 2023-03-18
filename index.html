@@ -22,10 +22,10 @@
                 <a href="https://suraj-eng-ai.github.io/Resume-/">RESUME</a>
                 <a href="#footer">CONTACT</a></div>
 <div class="hemrage">
-    <img src="mobile-menu-7-825750.webp" alt=" waait" width="50px" height="50px">
+    <img src="mobile-menu-7-825750.webp" alt=" waait" width="50px" height="50px" id="navMedia">
 </div>
         </nav>
-        <div class="media">
+        <div class="media" id="Hembrage">
             <a href="#" >HOME</a> 
                 <a href="#img1">PROJECT</a>
                 <a href="https://suraj-eng-ai.github.io/Resume-/">RESUME</a>
@@ -96,4 +96,15 @@
     </footer>
 </div>
 </body>
+<script>
+    let hemrage=document.getElementById("navMedia");
+    console.log(hemrage);
+    let navMedia=document.getElementById("Hembrage");
+    console.log(navMedia);
+    navMedia.style.display="none";
+    hemrage.addEventListener("mouseenter",display);
+    function display() {
+        navMedia.style.display="block";
+    }
+</script>
 </html>
